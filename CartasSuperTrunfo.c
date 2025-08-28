@@ -1,22 +1,77 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+struct CartaSuperTrunfo {
+
+char estado;
+char codigo[4];
+char nomeCidade[50];
+int populacao;
+float area;
+float pib;
+int pontosTuristicos;
+};
+
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
-    return 0;
+struct CartaSuperTrunfo carta1;
+struct CartaSuperTrunfo carta2;
+
+
+printf("Desafio Super Trunfo!\n");
+
+//Instruções para o usuário
+printf("Cadastro carta 1; \n");
+
+printf("Informe o Estado (A-H): \n");
+scanf(" %c", &carta1.estado);
+
+printf("Informe o código da carta (ex: A01): ");
+scanf("%s", &carta1.codigo);
+
+printf("Informe o nome da cidade: ");
+scanf("%s[^\n]", &carta1.nomeCidade);
+
+printf("Informe a população: ");
+scanf("%d", &carta1.populacao);
+
+printf("Informe a área (em km2): ");
+scanf("%f", &carta1.area);
+
+printf("Informe o PIB (em Bilhões de reais): ");
+scanf("%f", &carta1.pib);
+
+printf("Informe a quantidade de pontos turísticos: ");
+scanf("%d", &carta1.pontosTuristicos);
+
+printf("\n Cadastro da carta 2: \n");
+
+printf("Informe o estado: \n");
+scanf("%s", &carta2.estado);
+
+printf("Informe o código da carta: ");
+scanf("%s", &carta2.codigo);
+
+printf("Informe o nome da cidade: ");
+scanf("%s[^\n]", &carta2.nomeCidade);
+
+printf("Insira a população: ");
+scanf("%d", &carta2.populacao);
+
+printf("Insira a área: ");
+scanf("%f", &carta2.area);
+
+printf("Insira o PIB: ");
+scanf("%f", &carta2.pib);
+
+printf("Insira a quantidade de pontos turísticos: ");
+scanf("%d", &carta2.pontosTuristicos);
+
+
+
+
+
+
+
+return 0;
 }
